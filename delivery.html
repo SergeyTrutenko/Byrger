@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/aos/aos.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="top-nav d-flex logos">
+            <div class="img"><img src="img/burger.png" alt=""></div>
+            <nav class="d-flex">
+                <a href="#" class="my-order">Мой заказ</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="contacts">
+                    <a href="tel:8 (495) 321-02-12" class="tel">8 (495) 321-02-12</a>
+                    <p>Москва, Гостиничный проезд,  дом 6, корпус 2</p>
+                </div>
+                <ul class="menu d-flex">
+                    <li class="has-anchor"><a href="#">МЕНЮ</a></li>
+                    <li><a href="#">О НАС</a></li>
+                    <li><a href="#">ДОСТАВКА</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li><a class="franchise" href="#">ФРАНШИЗА</a></li>
+                </ul>
+            </nav>
+            <div class="img"><img src="img/coffee.png" alt=""></div>
+        </div>
+
+    </div>
+</header>
+
+<main class="content delivery">
+	
+	<section class="delivery-terms">
+		<div class="container">
+			<div class="block-img">
+				<img src="img/terms-delivery.jpg" alt="">
+			</div>
+			<div class="info">
+				<h1>
+					Условия<br> 
+					доставки
+				</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.  
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="payment-terms">
+		<div class="container">
+			<div class="info">
+				<h1>
+					Условия<br> 
+					оплаты
+				</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.  
+				</p>
+			</div>
+			<div class="block-img">
+				<img src="img/terms-payment.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="partners">
+		<div class="container">
+			<h2>
+				НАШИ <br>
+			 	ПАРТНЕРЫ
+			</h2>
+			<img src="img/partners-img1.jpg" alt="">
+			<img src="img/partners-img2.jpg" alt="">
+		</div>
+	</section>
+
+</main>
+
+<footer>
+	<div class="container">
+        <h1>Мы в соц. сетях</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+            Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes
+        </p>
+        <ul class="social dots">
+            <li><a href="#"><img src="img/icons/insta.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/icons/vk.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/icons/facebook.svg" alt=""></a></li>
+        </ul>
+        <button type="button" class="to-top">В начало</button>
+    </div>
+</footer>
+
+<!-- <div class="holder">
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div> -->
+
+<script src="libs/jquery/jquery-2.2.4.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script src="js/main_script.js"></script>
+
+<script class="gtm_scripts" data-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATjuXastJolnsTrH9urvBwWGQXvSx9d4Y&callback=initMap"></script>
+<script>
+    if ($('#map').length > 0) {
+        $('.gtm_scripts').attr('src', $('.gtm_scripts').attr('data-src'));
+    }
+
+    // map
+    if ($('#map').length > 0) {
+        function initMap() {
+            var prMediaMap = {lat: 64.518347, lng: 40.641099};
+            var markerIcon = {url: ''};
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 15, center: {lat: 64.518347, lng: 40.641099}, disableDefaultUI: true});
+            var marker = new google.maps.Marker({position: prMediaMap, map: map, icon: markerIcon});
+        }
+    }
+</script>
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+      var css = 
+        '<style>\n\
+          .markup-nav { cursor: pointer; position: fixed; z-index: 5000; top: 60px; left: -176px; width: 170px; font:bold 12px/1.2 Helvetica, Arial; box-shadow: 0 0 4px rgba(0, 0, 0, .6); transition: left 200ms ease; box-sizing: border-box; }\n\
+          .markup-nav__inner { background:#fff; border-radius: 0 0 5px 0; padding: 5px 10px 5px 0; position: relative; }\n\
+          .markup-nav:before { content: ""; position: absolute; left: 100%; top: 0; width: 35px; height: 40px; border-radius: 0 5px 5px 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAwFBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABiCivsAAAAP3RSTlMAAAIEEBEVFiYsLS4vMzg5Ojs8PT5BR0tUXV5gaG5vcHd4fby9v8DBwsTFycvMzc/g4+Tl5uvs7vP09fb5+v5kF+L8AAAAsklEQVR42m3QaReBQBTG8aks2VNIthARQostmvv9v5U7V5164f/qOb9zZuYUyzLi2KAhSTl5AF5B/cuhOYkAgpHqnTWiEwAH6gPgE+2h1JaozQtJVSIb59uu1lcpjjHSwH3gshi2xBG6QxYCliiCaiAKfvSUBVWIQqY54qApaIYj3mi41rhupqxYCY4pvdgD0UsA8AaRC6V2RD7k8fyDNN/tzO9436LlHLv/f06WHl31jL67eSl1BXfldgAAAABJRU5ErkJggg==) no-repeat 62% 50% white; box-shadow: 0 0 4px rgba(0, 0, 0, .6); }\n\
+          .markup-nav a { display: block; padding: 2px 10px; color: #000; /*text-shadow: 1px 1px 0 #283E68;*/text-decoration: none !important; border: none !important; }\n\
+          .markup-nav a:hover { background: #edf1f5; color: #000 !important; }\n\
+          .markup-nav.is-open { left: 0; }\n\
+        </style>';
+
+      var html =
+        '<div class="markup-nav">\n\
+          <div class="markup-nav__inner">\n\
+            <a href="index.html">index.html</a>\n\
+            <a href="category.html">category.html</a>\n\
+            <a href="product.html">product.html</a>\n\
+            <a href="about.html">about.html</a>\n\
+            <a href="delivery.html">delivery.html</a>\n\
+            <a href="information.html">information.html</a>\n\
+            <a href="basket.html">basket.html</a>\n\
+          </div>\n\
+        </div>'
+
+      $('body').prepend(css + html);
+
+      $('.markup-nav').on('click', function() {
+        $(this).toggleClass('is-open');
+      });
+    });
+  </script>
+
+</body>
